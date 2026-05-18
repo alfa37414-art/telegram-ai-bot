@@ -1,7 +1,8 @@
+import os
 from aiogram import Bot, Dispatcher, types
 from aiogram.utils import executor
 
-TOKEN = "8704632787:AAE5dj2s_k89uBUwXOExXkMnwo8R4hpRsCw"
+TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher(bot)
